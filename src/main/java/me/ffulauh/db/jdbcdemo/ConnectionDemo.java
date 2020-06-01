@@ -33,26 +33,34 @@ public class ConnectionDemo {
         System.out.println("hehe");
 
         conn.setAutoCommit(false);
+        conn.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
 //        String selectSql="update user set username=? where id=?";
 //        PreparedStatement stat=conn.prepareStatement(selectSql);
 //        stat.setString(1,"han");
 //        stat.setString(2,"1");
 
 
-        Blob avatar=conn.createBlob();
-        int offset=1;
-        OutputStream out = avatar.setBinaryStream(1);
-        InputStream is= Thread.currentThread().getContextClassLoader().getResourceAsStream("database.properties");
-        byte[] buffer=new byte[100];
-        int byteRead;
-        while ((byteRead=is.read(buffer))!=-1){
-            out.write(buffer,0,byteRead);
-        }
-        String updateAvatar="update user set avatar=? where id=?";
-        PreparedStatement stat=conn.prepareStatement(updateAvatar);
+//        Blob avatar=conn.createBlob();
+//        int offset=1;
+//        OutputStream out = avatar.setBinaryStream(1);
+//        InputStream is= Thread.currentThread().getContextClassLoader().getResourceAsStream("database.properties");
+//        byte[] buffer=new byte[100];
+//        int byteRead;
+//        while ((byteRead=is.read(buffer))!=-1){
+//            out.write(buffer,0,byteRead);
+//        }
+//        String updateAvatar="update user set avatar=? where id=?";
+//        PreparedStatement stat=conn.prepareStatement(updateAvatar);
+//
+//        stat.setBlob(1,avatar);
+//        stat.setString(2,"1");
+//        stat.executeUpdate();
 
-        stat.setBlob(1,avatar);
-        stat.setString(2,"1");
+        String updateName="update user set username=? where id=?";
+        PreparedStatement stat=conn.prepareStatement(updateName);
+
+        stat.setString(1,"sh");
+        stat.setInt(2,1);
         stat.executeUpdate();
 
         conn.commit();
