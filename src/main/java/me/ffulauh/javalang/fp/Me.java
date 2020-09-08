@@ -4,6 +4,10 @@ public class Me {
     private String name;
     private Integer age;
 
+    public void printMe(Me me){
+        System.out.println(me.toString());
+    }
+
     public String getName() {
         return name;
     }

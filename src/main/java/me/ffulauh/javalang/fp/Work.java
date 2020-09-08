@@ -2,5 +2,5 @@ package me.ffulauh.javalang.fp;
 
 @FunctionalInterface
 public interface Work {
-    String success(Me me);
+    void success(Me me);
 }

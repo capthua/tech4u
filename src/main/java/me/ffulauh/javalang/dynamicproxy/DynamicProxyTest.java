@@ -28,15 +28,22 @@ public class DynamicProxyTest {
 
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-            System.out.println("welcome");
-            return method.invoke(originalObj,args);
+            if(Object.class.equals(method.getDeclaringClass())) {
+                System.out.println("welcome");
+                return method.invoke(this,args);
+            }
+            Hello hello=new Hello();
+            return hello;
         }
     }
 
     public static void main(String[] args) {
-        IHello hello=(IHello)new DynamicProxy().bind(new Hello());
+        Hello hello=new Hello();
+        DynamicProxy dp=new DynamicProxy();
+        IHello helloProxy=(IHello)dp.bind(hello);
+        System.out.println(dp.hashCode());
 //        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
-        hello.sayHello();
+        System.out.println(helloProxy.hashCode());
 
     }
 

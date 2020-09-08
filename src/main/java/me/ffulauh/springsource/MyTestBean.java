@@ -1,7 +1,7 @@
 package me.ffulauh.springsource;
 
 public class MyTestBean {
-    private String testStr="testStr";
+    private String testStr;
 
     public String getTestStr() {
         return testStr;

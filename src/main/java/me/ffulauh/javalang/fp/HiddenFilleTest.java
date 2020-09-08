@@ -13,7 +13,7 @@ public class HiddenFilleTest {
         });
 
 //        lambda
-        File[] hiddenFiles2=new File(".").listFiles( (file) -> file.isHidden());
+        File[] hiddenFiles2=new File(".").listFiles( (File file) -> file.isHidden());
 
 //        将方法作为值传递
         File[] hiddenFiles3=new File(".").listFiles(File::isHidden);
