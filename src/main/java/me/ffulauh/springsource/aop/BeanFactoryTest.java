@@ -1,11 +1,8 @@
 package me.ffulauh.springsource.aop;
 
-import me.ffulauh.springsource.MyTestBean;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+import me.ffulauh.domain.MyTestBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
 
 public class BeanFactoryTest {
 

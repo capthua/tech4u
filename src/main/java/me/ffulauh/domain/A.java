@@ -1,8 +1,24 @@
 package me.ffulauh.domain;
 
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class A {
 
+//    @Override
+//    public void afterPropertiesSet() throws Exception {
+//        System.out.println("afterPropertiesSet");
+//    }
+
+    public void initMethod(){
+        System.out.println("initMethod");
+    }
+
     private String name;
+
+    @Autowired
     private B b;
 
     public String getName() {

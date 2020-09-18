@@ -1,4 +1,4 @@
-package me.ffulauh.springsource;
+package me.ffulauh.domain;
 
 public class Person {
     private String name;

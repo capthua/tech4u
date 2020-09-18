@@ -1,6 +1,9 @@
-package me.ffulauh.springsource;
+package me.ffulauh.domain;
 
 public class MyTestBean {
+
+    public MyTestBean(){}
+
     private String testStr;
 
     public String getTestStr() {
