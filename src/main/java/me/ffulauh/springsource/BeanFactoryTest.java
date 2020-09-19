@@ -3,6 +3,7 @@ package me.ffulauh.springsource;
 
 import me.ffulauh.domain.A;
 import me.ffulauh.domain.B;
+import me.ffulauh.domain.C;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
@@ -18,6 +19,7 @@ public class BeanFactoryTest {
 
         A a=(A) bf.getBean("a");
         B b=(B) bf.getBean("b");
+        C c=(C) bf.getBean("c");
 
         System.out.println("hehe");
     }
