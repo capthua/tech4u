@@ -18,12 +18,13 @@ public class B {
     public void setA(A a) {
         this.a = a;
     }
+    private C c;
 
-    public Integer getAge() {
-        return age;
+    public C getC() {
+        return c;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setC(C c) {
+        this.c = c;
     }
 }
