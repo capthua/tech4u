@@ -14,7 +14,5 @@
     <bean id="c" class="me.ffulauh.domain.C">
         <property name="a" ref="a"/>
     </bean>
-<!--    <context:component-scan base-package="me.ffulauh.domain">-->
-<!--    </context:component-scan>-->
 
 </beans>

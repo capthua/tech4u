@@ -1,5 +1,6 @@
 package me.ffulauh.springsource.context;
 
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyClassPathXmlApplicationContext extends ClassPathXmlApplicationContext {
@@ -12,4 +13,5 @@ public class MyClassPathXmlApplicationContext extends ClassPathXmlApplicationCon
     protected void initPropertySources() {
         getEnvironment().setRequiredProperties("VAR");
     }
+
 }

@@ -4,7 +4,6 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
 public class A {
 
 //    @Override
@@ -18,7 +17,6 @@ public class A {
 
     private String name;
 
-    @Autowired
     private B b;
 
     public String getName() {

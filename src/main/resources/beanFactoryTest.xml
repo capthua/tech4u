@@ -8,8 +8,8 @@
         <property name="testStr" value="heheda"/>
     </bean>
 
-    <bean id="person" class="me.ffulauh.domain.Person">
-    </bean>
+<!--    <bean id="person" class="me.ffulauh.domain.Person">-->
+<!--    </bean>-->
 
     <aop:aspectj-autoproxy/>
     <bean class="me.ffulauh.springsource.aop.AspectJTest"/>

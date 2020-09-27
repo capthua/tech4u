@@ -12,6 +12,7 @@
         <jackson-databind.version>2.8.5</jackson-databind.version>
         <httpclient.version>4.5.3</httpclient.version>
         <spring.version>4.2.6.RELEASE</spring.version>
+<!--        <spring.version>5.0.5.RELEASE</spring.version>-->
 <!--        <mysql.version>5.1.38</mysql.version>-->
         <mysql.version>8.0.16</mysql.version>
         <jedis.version>3.0.1</jedis.version>

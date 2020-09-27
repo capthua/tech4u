@@ -1,6 +1,17 @@
 package me.ffulauh.domain;
 
-public class MyTestBean {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+
+public class MyTestBean implements BeanFactoryAware {
+
+//    private BeanFactory beanFactory;
+
+    @Override
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+//        this.beanFactory=beanFactory;
+    }
 
     public MyTestBean(){}
 

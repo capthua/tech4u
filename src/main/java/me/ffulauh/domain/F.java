@@ -3,18 +3,19 @@ package me.ffulauh.domain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-public class B {
+@Component
+public class F {
 
+    @Autowired
+    private E e;
 
     private Integer age;
 
-    private C c;
-
-    public C getC() {
-        return c;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setC(C c) {
-        this.c = c;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
