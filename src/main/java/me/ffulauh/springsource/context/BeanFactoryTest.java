@@ -17,14 +17,14 @@ public class BeanFactoryTest {
 
 
     public static void main(String[] args) {
-//        BeanFactory bf=new XmlBeanFactory(new ClassPathResource("circularRefTest.xml"));
-        BeanFactory bf=new XmlBeanFactory(new ClassPathResource("autowire.xml"));
+        BeanFactory bf=new XmlBeanFactory(new ClassPathResource("circularRefTest.xml"));
+//        BeanFactory bf=new XmlBeanFactory(new ClassPathResource("autowire.xml"));
 
 
-        MyTestBean bean=(MyTestBean) bf.getBean("myTestBean");
+//        MyTestBean bean=(MyTestBean) bf.getBean("myTestBean");
 //        String hehe=bean.getTestStr();
 
-//        A a=(A) bf.getBean("a");
+        A a=(A) bf.getBean("a");
 //        B b=(B) bf.getBean("b");
 
         System.out.println("hehe");

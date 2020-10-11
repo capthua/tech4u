@@ -1,4 +1,4 @@
-package me.ffulauh.springsource.postprocessor;
+package me.ffulauh.springsource.postprocessor.bfpp;
 
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;

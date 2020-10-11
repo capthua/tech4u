@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    此方法会报错-->
+<!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
+<!--        <property name="customEditors">-->
+<!--            <map>-->
+<!--                <entry key="java.util.Date">-->
+<!--                    <bean class="me.ffulauh.springsource.context.propertyeditor.DatePropertyEditor">-->
+<!--                        <property name="format" value="yyyy-MM-dd"/>-->
+<!--                    </bean>-->
+<!--                </entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
+<!--        <property name="propertyEditorRegistrars">-->
+<!--            <list>-->
+<!--                <bean class="me.ffulauh.springsource.context.propertyeditor.DatePropertyEditorRegistrar"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <bean id="userManager" class="me.ffulauh.springsource.context.propertyeditor.UserManager">
+        <property name="dateValue" value="2020-02-04"/>
+    </bean>
+
+</beans>

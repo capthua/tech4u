@@ -3,14 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="myTestBean" class="me.ffulauh.domain.MyTestBean">
-        <meta key="hehehe" value="aaaa"/>
-        <property name="testStr" value="heheda"/>
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>messages</value>
+            </list>
+        </property>
     </bean>
 
-    <bean id="person" class="me.ffulauh.domain.Person">
-    </bean>
 
-    <aop:aspectj-autoproxy/>
-    <bean class="me.ffulauh.springsource.aop.AspectJTest"/>
 </beans>

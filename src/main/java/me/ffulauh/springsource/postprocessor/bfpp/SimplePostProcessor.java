@@ -1,4 +1,4 @@
-package me.ffulauh.springsource.postprocessor;
+package me.ffulauh.springsource.postprocessor.bfpp;
 
 public class SimplePostProcessor {
 

@@ -1,4 +1,4 @@
-package me.ffulauh.springsource.postprocessor;
+package me.ffulauh.springsource.postprocessor.bfpp;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
