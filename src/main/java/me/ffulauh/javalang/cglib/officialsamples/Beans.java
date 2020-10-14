@@ -1,4 +1,4 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.cglib.officialsamples;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -34,5 +34,20 @@ public class Beans implements MethodInterceptor {
         Object bean=e.create();
         interceptor.propertyChangeSupport=new PropertyChangeSupport(bean);
         return bean;
+    }
+
+    public static void main(String[] args) {
+        Bean bean=new Bean() {
+            @Override
+            public void addPropertyChangeListener(PropertyChangeListener listener) {
+                System.out.println("hehe");
+            }
+
+            @Override
+            public void removePropertyChangeListener(PropertyChangeListener listener) {
+                System.out.println("hehe");
+            }
+        };
+        Beans.newInstance(bean.getClass());
     }
 }
