@@ -2,8 +2,9 @@ package me.ffulauh.javalang.cglib;
 
 public class SampleClass {
 
-    public void test(){
-        System.out.println("hello world");
+    public String test(String msg){
+        System.out.println("sampleClass"+msg);
+        return msg;
     }
 
 }

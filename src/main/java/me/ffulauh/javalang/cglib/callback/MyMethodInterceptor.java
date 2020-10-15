@@ -1,4 +1,4 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.cglib.callback;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
