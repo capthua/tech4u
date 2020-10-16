@@ -35,6 +35,7 @@ public class CglibTest {
 
     }
 
+//    Bean generator
     @Test
     public void testBeanGenerator()throws Exception{
         BeanGenerator beanGenerator=new BeanGenerator();
