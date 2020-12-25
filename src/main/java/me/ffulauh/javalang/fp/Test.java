@@ -5,15 +5,27 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
+        //匿名内部类
+        Work work;
+//        work=new Work() {
+//            @Override
+//            public void success(Me me) {
+//                System.out.println(me.getName());
+//            }
+//        };
+//
 //        lambda表达式
-//        Work work=(Me me) -> me.getName();
+        work=(Me me) -> System.out.println(me.getName());
 
-        Work work= PrintUtils::print;
-//        Work work=(me) -> me.getName();
+
+        work=(me) -> me.getName();
+        //        将方法作为值传递， method reference
+        work=Me::getName;
+
+        work= (me)->PrintUtils.print(me);
+        work= PrintUtils::print;
         test(work);
-//        将方法作为值传递， method reference
-//        work=Me::getName;
-//        success(work);
+
 
         List<String> list=new ArrayList<>();
     }
