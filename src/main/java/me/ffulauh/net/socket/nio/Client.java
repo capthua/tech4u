@@ -14,7 +14,7 @@ public class Client {
         try {
             socketChannel=SocketChannel.open();
             socketChannel.configureBlocking(false);
-            socketChannel.connect(new InetSocketAddress(8024));
+            socketChannel.connect(new InetSocketAddress(NioServer.PORT));
             if(socketChannel.finishConnect()){
                 int i=0;
                 while (true){
@@ -27,6 +27,7 @@ public class Client {
                         System.out.println(buffer);
                         socketChannel.write(buffer);
                     }
+                    System.out.println("已发送:"+info);
                 }
             }
         } catch (IOException | InterruptedException e) {

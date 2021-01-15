@@ -11,12 +11,13 @@ import java.util.Iterator;
 
 public class NioServer {
     private static final int BUF_SIZE=1024;
-    private static final int PORT = 8024;
-    private static final int TIMEOUT = 3000;
+    static final int PORT = 8024;
+    private static final int TIMEOUT = 300000;
     public static void main(String[] args)
     {
         selector();
     }
+
     public static void handleAccept(SelectionKey key) throws IOException {
         ServerSocketChannel ssChannel = (ServerSocketChannel)key.channel();
         SocketChannel sc = ssChannel.accept();
