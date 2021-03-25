@@ -1,5 +1,7 @@
 package me.ffulauh.javalang;
 
+import java.lang.instrument.Instrumentation;
+
 public class Test {
     public static void main(String[] args) {
 //        System.out.println(Runtime.getRuntime().availableProcessors());
@@ -18,7 +20,15 @@ public class Test {
         p2.setName("han");
     }
 }
+class Animal{
+    public Animal(){
+        System.out.println("我是动物");
+    }
+}
 class People {
+
+    private static Animal animal=new Animal();
+
     String name;
     int age;
     public People(String name,int age){

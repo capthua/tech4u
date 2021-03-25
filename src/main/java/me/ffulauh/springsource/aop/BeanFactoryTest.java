@@ -10,6 +10,7 @@ public class BeanFactoryTest {
 //        BeanFactory bf=new XmlBeanFactory(new ClassPathResource("beanFactoryTest.xml"));
         ApplicationContext bf=new ClassPathXmlApplicationContext("beanFactoryTest.xml");
         MyTestBean bean=(MyTestBean) bf.getBean("myTestBean");
+        MyTestBean bean2=(MyTestBean) bf.getBean("myTestBean");
         bean.test();
     }
 

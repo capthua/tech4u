@@ -13,7 +13,9 @@ public class MyTestBean implements BeanFactoryAware {
 //        this.beanFactory=beanFactory;
     }
 
-    public MyTestBean(){}
+    public MyTestBean(){
+        System.out.println("myTestBean实例化");
+    }
 
     private String testStr;
 
