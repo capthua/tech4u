@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 public class ChannelCopy {
-    private static final int BSIZE=1024;
+    private static final int BSIZE=6;
 
     public static void main(String[] args)throws Exception {
         ByteBuffer bb=ByteBuffer.allocate(BSIZE);
@@ -16,11 +16,14 @@ public class ChannelCopy {
 //                System.out.println(bb.get());
 //            }
 //        }
-        bb.asCharBuffer().put("hanshoahua");
-        System.out.println(bb.asCharBuffer().toString());
-        bb.rewind();
-        System.out.println(bb.asCharBuffer().toString());
-
-
+//        bb.asCharBuffer().put("hanshoahua");
+//        System.out.println(bb.asCharBuffer().toString());
+//        bb.rewind();
+//        System.out.println(bb.asCharBuffer().toString());
+        bb.put((byte)129);
+        bb.put((byte)2);
+        bb.put((byte)3);
+        //bb.putInt(33);
+        System.out.println("hehe");
     }
 }

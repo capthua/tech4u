@@ -58,7 +58,7 @@ public class NioServer {
             ssc= ServerSocketChannel.open();
             ssc.socket().bind(new InetSocketAddress(PORT));
             ssc.configureBlocking(false);
-            ssc.register(selector, SelectionKey.OP_ACCEPT);
+            SelectionKey selectionKey = ssc.register(selector, SelectionKey.OP_ACCEPT);
             while(true){
                 if(selector.select(TIMEOUT) == 0){
                     System.out.println("==");
