@@ -1,4 +1,4 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.opbytecode.cglib;
 
 import net.sf.cglib.core.KeyFactory;
 

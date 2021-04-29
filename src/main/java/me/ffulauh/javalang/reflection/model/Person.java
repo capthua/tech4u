@@ -1,8 +1,12 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.reflection.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Person {
+
     private String name;
-    private int age;
+    private Integer age;
 
     public String getName() {
         return name;
@@ -12,11 +16,11 @@ public class Person {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }

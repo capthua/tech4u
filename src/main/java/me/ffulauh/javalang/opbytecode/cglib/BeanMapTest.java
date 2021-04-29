@@ -1,6 +1,5 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.opbytecode.cglib;
 
-import net.sf.cglib.beans.BeanGenerator;
 import net.sf.cglib.beans.BeanMap;
 
 public class BeanMapTest {

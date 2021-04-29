@@ -1,11 +1,9 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.opbytecode.cglib;
 
-import net.sf.cglib.beans.ImmutableBean;
-
-public class SampleBean {
+public class OtherSampleBean {
     private String value;
 
-    public SampleBean() {
+    public OtherSampleBean() {
     }
 
     public String getValue() {

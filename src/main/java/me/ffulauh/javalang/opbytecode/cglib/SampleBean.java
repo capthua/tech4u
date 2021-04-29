@@ -1,9 +1,9 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.opbytecode.cglib;
 
-public class OtherSampleBean {
+public class SampleBean {
     private String value;
 
-    public OtherSampleBean() {
+    public SampleBean() {
     }
 
     public String getValue() {

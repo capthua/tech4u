@@ -1,4 +1,4 @@
-package me.ffulauh.javalang.cglib.officialsamples;
+package me.ffulauh.javalang.opbytecode.cglib.officialsamples;
 
 import java.beans.PropertyChangeListener;
 import java.io.Serializable;

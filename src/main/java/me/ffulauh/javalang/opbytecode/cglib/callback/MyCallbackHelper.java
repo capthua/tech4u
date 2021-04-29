@@ -1,4 +1,4 @@
-package me.ffulauh.javalang.cglib.callback;
+package me.ffulauh.javalang.opbytecode.cglib.callback;
 
 import net.sf.cglib.proxy.CallbackHelper;
 import net.sf.cglib.proxy.NoOp;

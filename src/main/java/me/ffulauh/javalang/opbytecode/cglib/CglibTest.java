@@ -1,8 +1,6 @@
-package me.ffulauh.javalang.cglib;
+package me.ffulauh.javalang.opbytecode.cglib;
 
-import me.ffulauh.javalang.cglib.callback.MyCallbackHelper;
-import me.ffulauh.javalang.cglib.callback.MyInvocationHandler;
-import me.ffulauh.javalang.cglib.callback.MyMethodInterceptor;
+import me.ffulauh.javalang.opbytecode.cglib.callback.MyCallbackHelper;
 import net.sf.cglib.beans.BeanGenerator;
 import net.sf.cglib.proxy.CallbackHelper;
 import net.sf.cglib.proxy.Enhancer;

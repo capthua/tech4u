@@ -1,4 +1,4 @@
-package me.ffulauh.javalang.cglib.officialsamples;
+package me.ffulauh.javalang.opbytecode.cglib.officialsamples;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
